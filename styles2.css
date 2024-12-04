@@ -1,0 +1,104 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;  /* Cor de fundo mais suave */
+    color: #333;
+}
+
+/* Estilização do Header */
+header {
+    background-color: #1e3a8a; /* Azul escuro */
+    color: white;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #dd0707; /* Verde claro para hover */
+}
+
+/* Estilização do conteúdo principal */
+main {
+    padding: 3rem 1.5rem;
+    background-color: #fff;
+}
+
+/* Detalhes do post */
+.post-detail h1 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+}
+
+.post-detail p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para as dicas (subtítulos) */
+.post-detail h2 {
+    font-size: 1.8rem;
+    color: #dd0707; /* Verde claro */
+    margin-top: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 1rem 0;
+    }
+
+    .post-detail h1 {
+        font-size: 2rem;
+    }
+
+    .post-detail h2 {
+        font-size: 1.5rem;
+    }
+
+    .post-detail p {
+        font-size: 1rem;
+    }
+}
